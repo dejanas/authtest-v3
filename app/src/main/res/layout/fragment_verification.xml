@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    tools:context="com.etf.ac.bg.rs.sd120456.v3.authtestv3.VerificationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ostavite otisak prsta za AuthTest.v3"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            app:srcCompat="@drawable/ic_fingerprint_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/textview"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorRed"
+            android:visibility="gone"
+            android:drawablePadding="4dp"
+            android:text ="Obavestenje ako nema" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/textview1"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorRed"
+            android:visibility="gone"
+            android:text ="Obavestenje ako nema"
+            android:drawablePadding="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/textview2"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorRed"
+            android:visibility="gone"
+            android:text ="Obavestenje ako nema"
+            android:drawablePadding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/putFingerTV"
+            android:text="@string/instructions"
+            android:layout_marginTop="42dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:paddingBottom="30dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include
+                android:id="@+id/includeFooter"
+                layout="@layout/footer" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
